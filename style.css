@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.head{
+    padding: 40px 150px 10px 150px;
+    background-color: rgb(149, 150, 150);
+}
+.prvi-deo{
+    display: flex;
+}
+.moto{
+    flex: 1;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    color: white;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.korpa {
+    float: right;
+    width: 200px;
+    margin-top: 10px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #ff523b;
+}
+.korpa .logo-korpa {
+    width: 45px;
+    height: 100%;
+    padding: 3px;
+    background: white;
+    float: left;
+}
+.korpa .korpa-broj {
+    text-align: center;
+}
+.korpa .korpa-broj p {
+    margin: 0 0 0 20px;
+    font-weight: bolder;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #756969;
+}
+nav{
+    margin-top: 80px; 
+    text-align: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+    background-color: rgb(123, 128, 128);
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: -5px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+nav ul li:hover{
+    background: #ff523b;
+}
+nav ul li a {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 25px 35px;
+}
+
+/*PROIZVODI*/
+.okvir{
+    padding: 80px 150px 10px 150px;
+}
+#proizvodi #pr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+#proizvodi #pr input {
+    width: 40px;
+    border: none;
+}
+#proizvodi #pr input{
+    cursor: pointer;
+}
+#proizvodi #pr .proizvod {
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px;
+}
+#proizvodi #pr input::-webkit-inner-spin-button{
+    opacity: 1;
+    cursor: pointer;
+}
+#proizvodi #pr .proizvod img {
+    position: relative;
+    width: 100%;
+    transform: scale(0.6);
+    transition: transform 0.7s;
+}
+#proizvodi #pr .proizvod img:hover {
+    transform: translateY(-10px);
+}
+#proizvodi #pr .proizvod .btn {
+    height: 40px;
+    background: #756969;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+#proizvodi #pr .proizvod .btn:hover {
+    background-color: #ff523b;
+}
+#proizvodi #pr hr{
+    width: 100%;
+}
+/*REGISTRACIJA*/
+#registracija{
+    padding: 30px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 450px;
+}
+.reg{
+    margin-bottom: 10px;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.btn{
+    cursor: pointer;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ff523b;
+    border: none;
+    color: white;
+    font-size: 15px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+hr{
+    width: 140px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+select{
+    outline: none;
+}
+/*VESTI*/
+
+.v{
+    padding: 20px 150px 15px 130px;
+}
+#vesti {
+    margin-bottom: 50px;
+}
+#vesti .ve {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#vesti .ve .sl {
+    float: left;
+    width: 175px;
+    height: 100px;
+}
+#vesti .ve h3 {
+    font-size: 20px;
+    margin-left: 10px;  
+}
+#vesti .ve p {
+    margin: 10px 0 10px 10px;
+    font-size: 15px;
+}
+/*footer*/
+
+footer{
+    background-color: #756969;
+    height: 200px;
+    text-align: center;
+    border-top: 3px solid#ff523b;
+}
+footer img {
+    margin-top: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+footer p {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+footer p:hover {
+    color: #ccc;
+}
